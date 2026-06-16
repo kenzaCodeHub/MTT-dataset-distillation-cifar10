@@ -23,7 +23,7 @@ The method has three phases.
 
 **Phase 2 — Distillation.** At each iteration: a "student" network is initialized at a random point of an expert trajectory, trained for a few steps on the synthetic images, then the distance between the resulting weights and the expert's weights a few epochs later is measured. This distance is used to update the pixels of the synthetic images (via backpropagation all the way down to the pixels). This is repeated thousands of times.
 
-**Phase 3 — Evaluation.** Fresh networks are trained from scratch on the distilled images only, and their test accuracy is measured, the distilled images are also visualized.
+**Phase 3 — Evaluation.** Fresh networks are trained from scratch on the distilled images only, and their test accuracy is measured; the distilled images are also visualized.
 
 The key idea is *long-range matching*: a few training steps on the synthetic images must match several epochs of real training, which forces the images to concentrate as much useful information as possible.
 
@@ -81,16 +81,16 @@ python distill.py --dataset=CIFAR10 --ipc=<1|10|50> \
 
 ### 5.1 Distilled images (CIFAR-10)
 
-> _Insert here the images produced by `Visualisation.ipynb` (`mtt_distilled_images_ipc1.png`, `..._ipc10.png`, `..._ipc50.png`)._
+> _Insert here the images produced by `Visualisation.ipynb` (`ipc1.png`, `..._ipc10.png`, `..._ipc50.png`)._
 
 **1 image per class**
-![Distilled images ipc=1](mtt_distilled_images_ipc1.png)
+![Distilled images ipc=1](ipc1.png)
 
 **10 images per class**
-![Distilled images ipc=10](mtt_distilled_images_ipc10.png)
+![Distilled images ipc=10](ipc10.png)
 
 **50 images per class**
-![Distilled images ipc=50](mtt_distilled_images_ipc50.png)
+![Distilled images ipc=50](ipc50.png)
 
 At 1 image per class the images are highly abstract but still recognizable; with more images they become more structured and varied (consistent with Figure 4 of the paper).
 
@@ -106,11 +106,11 @@ All three configurations closely reproduce the paper's results: gaps are below o
 
 > _Insert here the learning-curves figure (Phase 1 experts + Phase 2 students) produced by `Visualisation.ipynb`._
 
-![Learning curves](mtt_courbes.png)
+![Learning curves](graphes.png)
 
 ### 5.3 Cross-architecture generalization (10 images/class)
 
-Images distilled with a ConvNet, then evaluated by training other architectures (results in `mtt_table3_results.json`).
+Images distilled with a ConvNet, then evaluated by training other architectures.
 
 | Architecture | Paper (Table 3) | My reproduction | Gap |
 |--------------|-----------------|-----------------|-----|
