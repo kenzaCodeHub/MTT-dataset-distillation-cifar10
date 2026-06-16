@@ -86,9 +86,11 @@ python distill.py --dataset=CIFAR10 --ipc=<1|10|50> \
 ![Distilled images ipc=1](ipc1.png)
 
 **10 images per class**
+
 ![Distilled images ipc=10](ipc10.png)
 
 **50 images per class**
+
 ![Distilled images ipc=50](ipc50.png)
 
 At 1 image per class the images are highly abstract but still recognizable; with more images they become more structured and varied (consistent with Figure 4 of the paper).
