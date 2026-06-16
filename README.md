@@ -3,6 +3,7 @@
 Reproduction of the **MTT** method (Cazenavette et al., *Dataset Distillation by Matching Training Trajectories*, CVPR Workshop 2022) on **CIFAR-10**, carried out as a Master's project.
 
 > **Original authors' code:** https://github.com/GeorgeCazenavette/mtt-distillation
+
 > **Project page:** https://georgecazenavette.github.io/mtt-distillation/
 
 ---
