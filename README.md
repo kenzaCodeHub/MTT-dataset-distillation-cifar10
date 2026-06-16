@@ -23,7 +23,7 @@ The method has three phases.
 
 **Phase 2 — Distillation.** At each iteration: a "student" network is initialized at a random point of an expert trajectory, trained for a few steps on the synthetic images, then the distance between the resulting weights and the expert's weights a few epochs later is measured. This distance is used to update the pixels of the synthetic images (via backpropagation all the way down to the pixels). This is repeated thousands of times.
 
-**Phase 3 — Evaluation.** Fresh networks are trained from scratch on the distilled images only, and their test accuracy is measured; the distilled images are also visualized.
+**Phase 3 — Evaluation.** Fresh networks are trained from scratch on the distilled images only, and their test accuracy is measured, the distilled images are also visualized.
 
 The key idea is *long-range matching*: a few training steps on the synthetic images must match several epochs of real training, which forces the images to concentrate as much useful information as possible.
 
