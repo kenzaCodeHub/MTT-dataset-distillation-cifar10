@@ -105,7 +105,6 @@ At 1 image per class the images are highly abstract but still recognizable; with
 
 All three configurations closely reproduce the paper's results: gaps are below one point, and the 10 and 50 images/class settings even slightly exceed the target. The small negative gap at 1 image/class (−0.55) stays within the uncertainty margin.
 
-> _Insert here the learning-curves figure (Phase 1 experts + Phase 2 students) produced by `Visualisation.ipynb`._
 
 ![Learning curves](graphes.png)
 
