@@ -80,7 +80,9 @@ python distill.py --dataset=CIFAR10 --ipc=<1|10|50> \
 ## 5. Results
 
 ### 5.1 Distilled images (CIFAR-10)
+
 **1 image per class**
+
 ![Distilled images ipc=1](ipc1.png)
 
 **10 images per class**
