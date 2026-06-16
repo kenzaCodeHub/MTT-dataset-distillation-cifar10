@@ -36,7 +36,6 @@ The key idea is *long-range matching*: a few training steps on the synthetic ima
 |------|------|
 | `Train_code.ipynb` | Phase 1 (expert generation) + Phase 2 (distillation for ipc = 1, 10, 50) |
 | `Visualisation.ipynb` | Phase 3: distilled-image visualization, learning curves, cross-architecture generalization |
-| `Cazenavette_..._paper.pdf` | The reference paper |
 
 Experiments were run on **Google Colab**, with results saved to Google Drive.
 
