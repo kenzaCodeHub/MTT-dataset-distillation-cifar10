@@ -137,3 +137,6 @@ This test checks that the distilled images do not overfit a single architecture.
 
 > George Cazenavette, Tongzhou Wang, Antonio Torralba, Alexei A. Efros, Jun-Yan Zhu.
 > *Dataset Distillation by Matching Training Trajectories.* CVPR Workshops, 2022.
+
+## 8. License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
